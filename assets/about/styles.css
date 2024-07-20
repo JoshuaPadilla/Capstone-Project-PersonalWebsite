@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #ededed
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+.about {
+    height: 100vh;
+    background: #081b29 ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.about-content-1{
+    margin-top: 40px;
+    max-width: 600px;
+    height: 500px;
+    
+}
+
+.about-content-1 h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.about-content-1 p{
+    font-size: 16px; 
+    margin: 20px 0 40px ;
+}
+
+.about-content-1 h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.about-content-1 ul > li {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.about-content-2{
+    margin-top: 40px;
+    margin-left: 40px;
+    max-width: 600px;
+    height: 500px;
+    
+}
+
+.about-content-2 h1 {
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.about-content-2 p {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid#00abf0;
+}
+
+.about-content-2 p:nth-child(6) {
+    border-bottom: none;
+}
+
+
+
+
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
